@@ -1,7 +1,7 @@
 # Función que comprueba si se repite un número en un conjunto de números.
 
 def has_duplicates(y):
-    x = y[:]
+    x = y.copy()
     x.sort()
     for i in range(len(x)):
         if i == len(x) - 1:
